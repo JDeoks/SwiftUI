@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         ZStack {
-            Color(.cyan)
+            Color(hex: "89d1dc")
             VStack{
                 Text("All About")
                     .font(.largeTitle)
@@ -22,12 +22,13 @@ struct HomeView: View {
                     // 사이즈 조절 가능
                     .scaledToFit()
                     // 비율 그대로
+                    .frame(maxWidth: 250)
                     .padding(.all)
                     .clipShape(Circle())
                     // 원 모양으로 클립
                     .overlay(
                         Circle()
-                            .stroke(.mint, style: StrokeStyle(lineWidth: 15))
+                            .stroke(Color(hex: "84b9dc"), style: StrokeStyle(lineWidth: 15))
                     )
                     // 테두리
                 Text("JeongDeok")
@@ -38,7 +39,7 @@ struct HomeView: View {
                         .foregroundColor(.yellow)
                     Text("joyful")
                         .font(.largeTitle)
-                        .foregroundColor(.blue)
+                        .foregroundColor(Color(hex: "7c9bdc"))
                         .padding()
                     Image(systemName: "sparkles")
                         .foregroundColor(.yellow)

@@ -21,4 +21,7 @@ extension Color {
     let b = Double((rgb >>  0) & 0xFF) / 255.0
     self.init(red: r, green: g, blue: b)
   }
+    init(R:Double, G:Double, B:Double){
+        self.init(red: R / 255.0, green: G / 255.0, blue: B / 255.0)
+    }
 }
