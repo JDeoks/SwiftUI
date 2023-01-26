@@ -1,0 +1,17 @@
+//
+//  TabViewApp.swift
+//  TabView
+//
+//  Created by 서정덕 on 2023/01/26.
+//
+
+import SwiftUI
+
+@main
+struct TabViewApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
