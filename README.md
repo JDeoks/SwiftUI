@@ -36,4 +36,17 @@ frame maxWidth로 크기 설정
 [키패스(KeyPath)](https://pinelover.tistory.com/273)  
 그리드 뷰  
 [.aspectRatio로 뷰 가로 세로 비율 조정](https://lazyowl.tistory.com/entry/SwiftUI-AspectRatio-%EB%84%88%EB%B9%84-%EB%86%92%EC%9D%B4-%EB%B0%B0%EC%9C%A8)
-, [.contentmode()로 채우기 방식](https://hyerios.tistory.com/35)
+, [.contentmode()로 채우기 방식](https://hyerios.tistory.com/35)  
+버튼에 label로 도형 넣기  
+Image.colorMultiply로 이미지에 색 덧입히기
+
+# SymbolGrid
+[Identifiable, Equatable 프로토콜](https://coding-rengar.tistory.com/47)  
+[UUID()](https://medium.com/@jang.wangsu/ios-swift-uuid%EB%8A%94-%EC%96%B4%EB%96%A4-%EC%9B%90%EB%A6%AC%EB%A1%9C-%EB%A7%8C%EB%93%A4%EC%96%B4%EC%A7%80%EB%8A%94-%EA%B2%83%EC%9D%BC%EA%B9%8C-22ec9ff4e792)
+### ContentView.swift
+[NavigationStack](https://zeddios.tistory.com/1376)  
+스택안에 Title 넣음   
+[NavigationLink](https://seons-dev.tistory.com/entry/NavigationView)는 넘어가는 뷰와 링크 표시방식인 lable로 구성  
+[@State](https://medium.com/harrythegreat/swiftui-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-5%ED%8E%B8-state-binding-observedobject-83c00c3317cb): 변수가 변경 될 때마다 body를 다시 렌더링  
+[@Binding과 @State의 차이:](https://medium.com/harrythegreat/swiftui-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-5%ED%8E%B8-state-binding-observedobject-83c00c3317cb)  
+[Source of Truth(SOT)](https://velog.io/@qwer15417/SwiftUI-%EB%B7%B0-%EC%82%AC%EC%9D%B4%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%9D%90%EB%A6%84-%EA%B4%80%EB%A6%AC)
