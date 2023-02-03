@@ -49,4 +49,5 @@ Image.colorMultiply로 이미지에 색 덧입히기
 [NavigationLink](https://seons-dev.tistory.com/entry/NavigationView)는 넘어가는 뷰와 링크 표시방식인 lable로 구성  
 [@State](https://medium.com/harrythegreat/swiftui-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-5%ED%8E%B8-state-binding-observedobject-83c00c3317cb): 변수가 변경 될 때마다 body를 다시 렌더링  
 [@Binding과 @State의 차이:](https://medium.com/harrythegreat/swiftui-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-5%ED%8E%B8-state-binding-observedobject-83c00c3317cb)  
-[Source of Truth(SOT)](https://velog.io/@qwer15417/SwiftUI-%EB%B7%B0-%EC%82%AC%EC%9D%B4%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%9D%90%EB%A6%84-%EA%B4%80%EB%A6%AC)
+[Source of Truth(SOT)](https://velog.io/@qwer15417/SwiftUI-%EB%B7%B0-%EC%82%AC%EC%9D%B4%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%9D%90%EB%A6%84-%EA%B4%80%EB%A6%AC)  
+[toggle()](https://jusung.github.io/Bool-%EA%B0%92%EC%9D%84-%EB%B0%98%EC%A0%84%EC%8B%9C%ED%82%A4%EB%8A%94-toggle()/): Bool값 변경시키는 함수

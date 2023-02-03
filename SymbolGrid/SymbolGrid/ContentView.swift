@@ -37,6 +37,7 @@ struct ContentView: View {
             ScrollView{
                 LazyVGrid(columns: gridColumns) {
                     ForEach(symbols) { symbol in
+                        //Symbol 배열인 symbols의 요소마다 symbol로 받아서 적용
                         NavigationLink{
                             SymbolDetail(symbolVal: symbol)
                         } label: {
