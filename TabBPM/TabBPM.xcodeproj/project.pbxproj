@@ -11,6 +11,7 @@
 		2AB06BA329B8C21500EBA693 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB06BA229B8C21500EBA693 /* ContentView.swift */; };
 		2AB06BA529B8C21700EBA693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB06BA429B8C21700EBA693 /* Assets.xcassets */; };
 		2AB06BA829B8C21700EBA693 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB06BA729B8C21700EBA693 /* Preview Assets.xcassets */; };
+		2AB06BB029B8C8DD00EBA693 /* Hihat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2AB06BAF29B8C8DD00EBA693 /* Hihat.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		2AB06BA229B8C21500EBA693 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2AB06BA429B8C21700EBA693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AB06BA729B8C21700EBA693 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2AB06BAF29B8C8DD00EBA693 /* Hihat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Hihat.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				2AB06BA029B8C21500EBA693 /* TabBPMApp.swift */,
 				2AB06BA229B8C21500EBA693 /* ContentView.swift */,
+				2AB06BAE29B8C8C000EBA693 /* sounds */,
 				2AB06BA429B8C21700EBA693 /* Assets.xcassets */,
 				2AB06BA629B8C21700EBA693 /* Preview Content */,
 			);
@@ -65,6 +68,14 @@
 				2AB06BA729B8C21700EBA693 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2AB06BAE29B8C8C000EBA693 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				2AB06BAF29B8C8DD00EBA693 /* Hihat.wav */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +138,7 @@
 			files = (
 				2AB06BA829B8C21700EBA693 /* Preview Assets.xcassets in Resources */,
 				2AB06BA529B8C21700EBA693 /* Assets.xcassets in Resources */,
+				2AB06BB029B8C8DD00EBA693 /* Hihat.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
