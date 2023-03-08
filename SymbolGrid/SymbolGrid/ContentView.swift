@@ -28,7 +28,6 @@ struct ContentView: View {
            Symbol(name: "icloud"),
            Symbol(name: "theatermasks.fill"),
            Symbol(name: "moon.stars")
-
        ]
     
     var body: some View {
