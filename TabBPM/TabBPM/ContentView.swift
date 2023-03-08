@@ -7,6 +7,13 @@
 
 import SwiftUI
 import AVKit
+import Combine
+
+// AVKit 사용 소리 효과 (https://seons-dev.tistory.com/entry/SwiftUI-Sound-Effects)
+// 스톱워치 (https://medium.com/geekculture/build-a-stopwatch-in-just-3-steps-using-swiftui-778c327d214b)
+// 싱글톤 https://babbab2.tistory.com/66
+// 타이머 https://sweetdev.tistory.com/474, https://www.youtube.com/watch?v=_WJzpPgHkhg
+
 
 class SoundSetting: ObservableObject {
     
@@ -32,14 +39,26 @@ class SoundSetting: ObservableObject {
 }
 
 struct ContentView: View {
+    //진행 초
+    @State private var progressTime: Int = 0
+    
+    // 싱글톤
+    let soundInstance = SoundSetting.instance
+    
+    let timer = Timer.publish(every: 0.01, on: .main, in: .common).autoconnect()
+    
     var body: some View {
         VStack(spacing: 20) {
-             Button {
-                 SoundSetting.instance.playSound()
-                 //some action 1
-             } label: {
-                 Text("hihatSound")
-             }
+            Text("\(progressTime)")
+                .onReceive(timer) { _ in
+                    progressTime += 1
+                }
+            Button {
+                soundInstance.playSound()
+                //some action 1
+            } label: {
+                Text("HihatSound")
+            }
              
          }
     }
