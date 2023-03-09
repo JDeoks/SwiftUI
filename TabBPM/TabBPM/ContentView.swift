@@ -40,24 +40,88 @@ class SoundSetting: ObservableObject {
 
 struct ContentView: View {
     //진행 초
+    /// 누르는 간격
     @State private var progressTime: Int = 0
-    
+    /// 탭한 횟수
+    @State var numOfTab: Int = 0
+    /// 첫 탭인지  구분하기 위한 플래그
+    @State var lastTab: Int = 0
+    /// progressTime의 총 합
+    @State var totaltime: Int = 0
+    ///
+    var BPM: Int {
+        get {
+            if numOfTab != 0 {
+                return Int(round(Double(totaltime) / Double(numOfTab)))
+
+            }
+            else {
+                return 0
+            }
+        }
+    }
+
     // 싱글톤
     let soundInstance = SoundSetting.instance
     
-    let timer = Timer.publish(every: 0.01, on: .main, in: .common).autoconnect()
+    @State var timer = Timer.publish(every: 0.01, on: .main, in: .common).autoconnect()
+    
+    func touchEvent() {
+        numOfTab += 1
+    }
     
     var body: some View {
         VStack(spacing: 20) {
-            Text("\(progressTime)")
+
+            Text("BPM: \(BPM)")
+                .font(.largeTitle)
+
+            Text("numOfTab: \(numOfTab)")
+            Text("totaltime: \(totaltime)")
+
+            Text("progressTime: \(progressTime)")
+                // 타이머를 받을 때 마다 안의 클로저 실행
                 .onReceive(timer) { _ in
                     progressTime += 1
                 }
-            Button {
-                soundInstance.playSound()
-                //some action 1
-            } label: {
-                Text("HihatSound")
+            HStack {
+                Button {
+                    
+                    // 처음 버튼을 눌렀을 때
+                    if lastTab == 0 {
+                        // lastTab에 현재시간 저장
+                        lastTab = 1
+                        progressTime = 0
+
+                    }
+                    else {
+                        numOfTab += 1
+                        totaltime += progressTime
+                        progressTime = 0
+                    }
+        
+                    //첫 탭을 했을 때 타이머가 시작했으면 좋겠는데
+                    // lastTab에 현재 progressTime 저장
+                    
+                    // 배열에 간격 추가
+                    // tabIdx += 1
+
+//                    tabIdx += 1
+                    soundInstance.playSound()
+                    //some action 1
+                } label: {
+                    Text("HihatSound")
+                }
+                
+                Button {
+                   //초기화 함수
+                    numOfTab = 0
+                    totaltime = 0
+                    lastTab = 0
+                    progressTime = 0
+                } label: {
+                    Text("reset")
+                }
             }
              
          }
