@@ -55,9 +55,11 @@ struct ContentView: View {
     
     /// BPM 계산하는 연산프로퍼티
     var BPM: Int {
+
+        // bpm = 60 * numOfTab / total
         get {
             if numOfTab != 0 {
-                return Int(round(Double(totaltime) / Double(numOfTab)))
+                return Int(round(6000.0 * Double(numOfTab) / Double(numOfTab)))
             }
             else {
                 return 0
