@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AA52BDC29BAE2F50070DB2B /* ColorExtentsion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA52BDB29BAE2F50070DB2B /* ColorExtentsion.swift */; };
 		2AB06BA129B8C21500EBA693 /* TabBPMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB06BA029B8C21500EBA693 /* TabBPMApp.swift */; };
 		2AB06BA329B8C21500EBA693 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB06BA229B8C21500EBA693 /* ContentView.swift */; };
 		2AB06BA529B8C21700EBA693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB06BA429B8C21700EBA693 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2AA52BDB29BAE2F50070DB2B /* ColorExtentsion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorExtentsion.swift; path = ../../TabView/TabView/ColorExtentsion.swift; sourceTree = "<group>"; };
 		2AB06B9D29B8C21500EBA693 /* TabBPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB06BA029B8C21500EBA693 /* TabBPMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBPMApp.swift; sourceTree = "<group>"; };
 		2AB06BA229B8C21500EBA693 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				2AB06BA029B8C21500EBA693 /* TabBPMApp.swift */,
 				2AB06BA229B8C21500EBA693 /* ContentView.swift */,
+				2AA52BDB29BAE2F50070DB2B /* ColorExtentsion.swift */,
 				2AB06BAE29B8C8C000EBA693 /* sounds */,
 				2AB06BA429B8C21700EBA693 /* Assets.xcassets */,
 				2AB06BA629B8C21700EBA693 /* Preview Content */,
@@ -151,6 +154,7 @@
 			files = (
 				2AB06BA329B8C21500EBA693 /* ContentView.swift in Sources */,
 				2AB06BA129B8C21500EBA693 /* TabBPMApp.swift in Sources */,
+				2AA52BDC29BAE2F50070DB2B /* ColorExtentsion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
