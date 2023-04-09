@@ -52,3 +52,5 @@ Image.colorMultiply로 이미지에 색 덧입히기
 [Source of Truth(SOT)](https://velog.io/@qwer15417/SwiftUI-%EB%B7%B0-%EC%82%AC%EC%9D%B4%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%9D%90%EB%A6%84-%EA%B4%80%EB%A6%AC)  
 [toggle()](https://jusung.github.io/Bool-%EA%B0%92%EC%9D%84-%EB%B0%98%EC%A0%84%EC%8B%9C%ED%82%A4%EB%8A%94-toggle()/): Bool값 변경시키는 함수  
 ### SymbolPicker.swift
+
+[macOS 빌드](https://eunjin3786.tistory.com/335)
