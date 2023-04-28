@@ -26,7 +26,7 @@ struct ContentView: View {
     let allColors: [Color] = [.pink, .red, .orange, .yellow, .green, .mint, .teal, .cyan, .blue, .indigo, .purple, .brown, .gray]
     
     var body: some View {
-        ScrollView{
+        VStack{
             Image("arizona")
                 .resizable()
                 .scaledToFit()
