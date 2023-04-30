@@ -24,36 +24,45 @@ struct ContentView: View {
             }
 
             // 이미지 피커를 표시하는 버튼
-            Button("Choose a photo") {
+            Button("사진 선택") {
                 showingImagePicker = true
             }
         }
         // .sheet를 .fullScreenCover로 변경
+        // present 여부를 $showingImagePicker로 결정함
+        // .sheet나 .fullScreenCover를 사용하면, 해당 뷰를 닫을 때 자동으로 isPresented와 연결된 변수 false로 설정
         .fullScreenCover(isPresented: $showingImagePicker, onDismiss: loadImage) {
             // 이미지 피커를 표시
             ImagePicker(image: $inputImage)
         }
     }
 
-    // 이미지가 선택되면 실행되는 함수
+    /// 이미지가 선택되고, ImagePicker가 dismiss되면 실행되는 함수
     func loadImage() {
-        // 이미지를 저장하거나 처리하려면 여기에서 수행하세요
+        // 이미지를 저장하거나 처리하려면 여기에서 수행
     }
 }
-
+//
 struct ImagePicker: UIViewControllerRepresentable {
+    /// 뷰의 presentation 상태에 접근하는 데 사용된다. 뷰를 닫는 동작을 처리하기 위해 사용
     @Environment(\.presentationMode) var presentationMode
-    @Binding var image: UIImage? // 선택한 이미지를 저장하는 Binding 변수
+    /// 선택한 이미지를 저장하는  변수. 다른 뷰와 값이 동기화되어야 하므로 @Binding이 사용됨
+    @Binding var image: UIImage?
 
-    // Coordinator를 생성하는 함수
+    // UIViewControllerRepresentable에 정의되어 있음
+    // UIViewController 객체가 생성됨과 동시에 호출, Coordinator 객체를 생성
     func makeCoordinator() -> Coordinator {
+        // init 메서드에 자신(ImagePicker)넣음
         Coordinator(self)
     }
 
-    // UIImagePickerController를 생성하고 설정하는 함수
+    // UIViewControllerRepresentable을 채택한 뷰가 생성될 때 호출
+    // UIImagePickerController를 생성하고 반환
     func makeUIViewController(context: UIViewControllerRepresentableContext<ImagePicker>) -> UIImagePickerController {
         let picker = UIImagePickerController()
+        // delegate를
         picker.delegate = context.coordinator
+        // picker.sourceType = .camera
         picker.sourceType = .photoLibrary // 앨범에서 이미지를 선택하도록 설정
         return picker
     }
@@ -77,6 +86,7 @@ struct ImagePicker: UIViewControllerRepresentable {
             parent.presentationMode.wrappedValue.dismiss()
         }
     }
+
 }
 
 
