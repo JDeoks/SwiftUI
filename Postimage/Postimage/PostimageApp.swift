@@ -1,0 +1,17 @@
+//
+//  PostImageApp.swift
+//  PostImage
+//
+//  Created by 서정덕 on 2023/05/15.
+//
+
+import SwiftUI
+
+@main
+struct PostImageApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
