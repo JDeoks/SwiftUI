@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var sourceType: UIImagePickerController.SourceType = .photoLibrary
+    @State private var sourceType: UIImagePickerController.SourceType = .camera
     @State private var selectedImage: UIImage?
     @State private var isImagePickerDisplay = false
     
