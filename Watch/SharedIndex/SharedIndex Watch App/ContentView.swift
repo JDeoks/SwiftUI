@@ -8,20 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var counter = CounterManager()
-
+    @ObservedObject var counterManager = CounterManager.shared
+    
     var body: some View {
         VStack {
-            Text("\(counter.count)")
+            Text("\(counterManager.count)")
                 .font(.largeTitle)
 
             HStack {
-                Button(action: counter.decrement) {
+                Button(action: {
+                    counterManager.decreaseCount()
+                }) {
                     Text("-")
                 }
                 .padding()
 
-                Button(action: counter.increment) {
+                Button(action: {
+                    counterManager.increaseCount()
+                }) {
                     Text("+")
                 }
                 .padding()
@@ -31,9 +35,10 @@ struct ContentView: View {
     }
 }
 
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+
+
