@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A5ABD6E2A28476C0078AEF2 /* SharedIndexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5ABD6D2A28476C0078AEF2 /* SharedIndexApp.swift */; };
+		2A5ABD702A28476C0078AEF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5ABD6F2A28476C0078AEF2 /* ContentView.swift */; };
+		2A5ABD722A28476E0078AEF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5ABD712A28476E0078AEF2 /* Assets.xcassets */; };
+		2A5ABD752A28476E0078AEF2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5ABD742A28476E0078AEF2 /* Preview Assets.xcassets */; };
+		2A5ABD7B2A28476E0078AEF2 /* SharedIndex Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2A5ABD7A2A28476E0078AEF2 /* SharedIndex Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2A5ABD802A28476E0078AEF2 /* SharedIndexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5ABD7F2A28476E0078AEF2 /* SharedIndexApp.swift */; };
+		2A5ABD822A28476E0078AEF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5ABD812A28476E0078AEF2 /* ContentView.swift */; };
+		2A5ABD842A28476E0078AEF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5ABD832A28476E0078AEF2 /* Assets.xcassets */; };
+		2A5ABD872A28476E0078AEF2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5ABD862A28476E0078AEF2 /* Preview Assets.xcassets */; };
+		2A5ABD932A28479F0078AEF2 /* CounterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5ABD922A28479F0078AEF2 /* CounterManager.swift */; };
+		2A5ABD942A28479F0078AEF2 /* CounterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5ABD922A28479F0078AEF2 /* CounterManager.swift */; };
+		2A5ABD962A285DD40078AEF2 /* SessionDelegater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5ABD952A285DD40078AEF2 /* SessionDelegater.swift */; };
+		2A5ABD972A285DD40078AEF2 /* SessionDelegater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5ABD952A285DD40078AEF2 /* SessionDelegater.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A5ABD7C2A28476E0078AEF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A5ABD622A28476B0078AEF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A5ABD792A28476E0078AEF2;
+			remoteInfo = "SharedIndex Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2A5ABD8D2A28476E0078AEF2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2A5ABD7B2A28476E0078AEF2 /* SharedIndex Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2A5ABD6A2A28476C0078AEF2 /* SharedIndex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharedIndex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5ABD6D2A28476C0078AEF2 /* SharedIndexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedIndexApp.swift; sourceTree = "<group>"; };
+		2A5ABD6F2A28476C0078AEF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2A5ABD712A28476E0078AEF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A5ABD742A28476E0078AEF2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2A5ABD7A2A28476E0078AEF2 /* SharedIndex Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SharedIndex Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5ABD7F2A28476E0078AEF2 /* SharedIndexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedIndexApp.swift; sourceTree = "<group>"; };
+		2A5ABD812A28476E0078AEF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2A5ABD832A28476E0078AEF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A5ABD862A28476E0078AEF2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2A5ABD922A28479F0078AEF2 /* CounterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterManager.swift; sourceTree = "<group>"; };
+		2A5ABD952A285DD40078AEF2 /* SessionDelegater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegater.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A5ABD672A28476C0078AEF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5ABD772A28476E0078AEF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A5ABD612A28476B0078AEF2 = {
+			isa = PBXGroup;
+			children = (
+				2A5ABD912A2847760078AEF2 /* Shared */,
+				2A5ABD6C2A28476C0078AEF2 /* SharedIndex */,
+				2A5ABD7E2A28476E0078AEF2 /* SharedIndex Watch App */,
+				2A5ABD6B2A28476C0078AEF2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A5ABD6B2A28476C0078AEF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A5ABD6A2A28476C0078AEF2 /* SharedIndex.app */,
+				2A5ABD7A2A28476E0078AEF2 /* SharedIndex Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A5ABD6C2A28476C0078AEF2 /* SharedIndex */ = {
+			isa = PBXGroup;
+			children = (
+				2A5ABD6D2A28476C0078AEF2 /* SharedIndexApp.swift */,
+				2A5ABD6F2A28476C0078AEF2 /* ContentView.swift */,
+				2A5ABD712A28476E0078AEF2 /* Assets.xcassets */,
+				2A5ABD732A28476E0078AEF2 /* Preview Content */,
+			);
+			path = SharedIndex;
+			sourceTree = "<group>";
+		};
+		2A5ABD732A28476E0078AEF2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2A5ABD742A28476E0078AEF2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2A5ABD7E2A28476E0078AEF2 /* SharedIndex Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				2A5ABD7F2A28476E0078AEF2 /* SharedIndexApp.swift */,
+				2A5ABD812A28476E0078AEF2 /* ContentView.swift */,
+				2A5ABD832A28476E0078AEF2 /* Assets.xcassets */,
+				2A5ABD852A28476E0078AEF2 /* Preview Content */,
+			);
+			path = "SharedIndex Watch App";
+			sourceTree = "<group>";
+		};
+		2A5ABD852A28476E0078AEF2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2A5ABD862A28476E0078AEF2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2A5ABD912A2847760078AEF2 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2A5ABD922A28479F0078AEF2 /* CounterManager.swift */,
+				2A5ABD952A285DD40078AEF2 /* SessionDelegater.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A5ABD692A28476C0078AEF2 /* SharedIndex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A5ABD8E2A28476E0078AEF2 /* Build configuration list for PBXNativeTarget "SharedIndex" */;
+			buildPhases = (
+				2A5ABD662A28476C0078AEF2 /* Sources */,
+				2A5ABD672A28476C0078AEF2 /* Frameworks */,
+				2A5ABD682A28476C0078AEF2 /* Resources */,
+				2A5ABD8D2A28476E0078AEF2 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A5ABD7D2A28476E0078AEF2 /* PBXTargetDependency */,
+			);
+			name = SharedIndex;
+			productName = SharedIndex;
+			productReference = 2A5ABD6A2A28476C0078AEF2 /* SharedIndex.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A5ABD792A28476E0078AEF2 /* SharedIndex Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A5ABD8A2A28476E0078AEF2 /* Build configuration list for PBXNativeTarget "SharedIndex Watch App" */;
+			buildPhases = (
+				2A5ABD762A28476E0078AEF2 /* Sources */,
+				2A5ABD772A28476E0078AEF2 /* Frameworks */,
+				2A5ABD782A28476E0078AEF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SharedIndex Watch App";
+			productName = "SharedIndex Watch App";
+			productReference = 2A5ABD7A2A28476E0078AEF2 /* SharedIndex Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A5ABD622A28476B0078AEF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2A5ABD692A28476C0078AEF2 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					2A5ABD792A28476E0078AEF2 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 2A5ABD652A28476B0078AEF2 /* Build configuration list for PBXProject "SharedIndex" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A5ABD612A28476B0078AEF2;
+			productRefGroup = 2A5ABD6B2A28476C0078AEF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A5ABD692A28476C0078AEF2 /* SharedIndex */,
+				2A5ABD792A28476E0078AEF2 /* SharedIndex Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A5ABD682A28476C0078AEF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5ABD752A28476E0078AEF2 /* Preview Assets.xcassets in Resources */,
+				2A5ABD722A28476E0078AEF2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5ABD782A28476E0078AEF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5ABD872A28476E0078AEF2 /* Preview Assets.xcassets in Resources */,
+				2A5ABD842A28476E0078AEF2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A5ABD662A28476C0078AEF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5ABD702A28476C0078AEF2 /* ContentView.swift in Sources */,
+				2A5ABD932A28479F0078AEF2 /* CounterManager.swift in Sources */,
+				2A5ABD962A285DD40078AEF2 /* SessionDelegater.swift in Sources */,
+				2A5ABD6E2A28476C0078AEF2 /* SharedIndexApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5ABD762A28476E0078AEF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5ABD822A28476E0078AEF2 /* ContentView.swift in Sources */,
+				2A5ABD942A28479F0078AEF2 /* CounterManager.swift in Sources */,
+				2A5ABD972A285DD40078AEF2 /* SessionDelegater.swift in Sources */,
+				2A5ABD802A28476E0078AEF2 /* SharedIndexApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A5ABD7D2A28476E0078AEF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A5ABD792A28476E0078AEF2 /* SharedIndex Watch App */;
+			targetProxy = 2A5ABD7C2A28476E0078AEF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2A5ABD882A28476E0078AEF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A5ABD892A28476E0078AEF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2A5ABD8B2A28476E0078AEF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SharedIndex Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 39JATSZXJT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SharedIndex;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Deok.SharedIndex;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Deok.SharedIndex.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		2A5ABD8C2A28476E0078AEF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SharedIndex Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 39JATSZXJT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SharedIndex;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Deok.SharedIndex;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Deok.SharedIndex.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		2A5ABD8F2A28476E0078AEF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SharedIndex/Preview Content\"";
+				DEVELOPMENT_TEAM = 39JATSZXJT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SharedIndex;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Deok.SharedIndex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A5ABD902A28476E0078AEF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SharedIndex/Preview Content\"";
+				DEVELOPMENT_TEAM = 39JATSZXJT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SharedIndex;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Deok.SharedIndex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A5ABD652A28476B0078AEF2 /* Build configuration list for PBXProject "SharedIndex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5ABD882A28476E0078AEF2 /* Debug */,
+				2A5ABD892A28476E0078AEF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A5ABD8A2A28476E0078AEF2 /* Build configuration list for PBXNativeTarget "SharedIndex Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5ABD8B2A28476E0078AEF2 /* Debug */,
+				2A5ABD8C2A28476E0078AEF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A5ABD8E2A28476E0078AEF2 /* Build configuration list for PBXNativeTarget "SharedIndex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5ABD8F2A28476E0078AEF2 /* Debug */,
+				2A5ABD902A28476E0078AEF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A5ABD622A28476B0078AEF2 /* Project object */;
+}
