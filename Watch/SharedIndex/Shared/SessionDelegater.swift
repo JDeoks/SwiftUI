@@ -12,10 +12,10 @@ import WatchConnectivity
 class SessionDelegater: NSObject, WCSessionDelegate {
     static let shared = SessionDelegater()
     
-    let countSubject: PassthroughSubject<Int, Never>
+    let countSubject = PassthroughSubject<Int, Never>()
+    let messageSubject = PassthroughSubject<String, Never>()
     
     private override init() {
-        self.countSubject = PassthroughSubject<Int, Never>()
         super.init()
     }
     
@@ -29,7 +29,12 @@ class SessionDelegater: NSObject, WCSessionDelegate {
             if let count = message["count"] as? Int {
                 self.countSubject.send(count)
             } else {
-                print("There was an error")
+                print("There was an error (count)")
+            }
+            if let message = message["message"] as? String {
+                self.messageSubject.send(message)
+            } else {
+                print("There was an error (message)")
             }
         }
     }
@@ -50,3 +55,4 @@ class SessionDelegater: NSObject, WCSessionDelegate {
     
     #endif
 }
+

@@ -12,6 +12,8 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Text(counterManager.message)
+                .font(.largeTitle)
             Text("\(counterManager.count)")
                 .font(.largeTitle)
 

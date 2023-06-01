@@ -15,6 +15,7 @@ final class CounterManager: ObservableObject {
     private var session: WCSession
     
     @Published private(set) var count: Int = 0
+    @Published private(set) var message: String = ""
     
     private init(session: WCSession = .default) {
         self.session = session
@@ -24,6 +25,10 @@ final class CounterManager: ObservableObject {
         SessionDelegater.shared.countSubject
             .receive(on: DispatchQueue.main)
             .assign(to: &$count)
+        
+        SessionDelegater.shared.messageSubject
+            .receive(on: DispatchQueue.main)
+            .assign(to: &$message)
     }
     
     func increaseCount() {
@@ -39,4 +44,11 @@ final class CounterManager: ObservableObject {
             print(error.localizedDescription)
         }
     }
+    
+    func sendMessage2Watch(messageText: String) {
+        session.sendMessage(["message": messageText], replyHandler: nil) { error in
+            print(error.localizedDescription)
+        }
+    }
 }
+
